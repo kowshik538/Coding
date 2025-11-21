@@ -1,6 +1,4 @@
-// baseDecode.js
 
-// Convert a single character (0-9, a-f, A-F) to a digit value
 function charToDigit(ch) {
   const c = ch.toLowerCase();
   if (c >= '0' && c <= '9') {
@@ -12,7 +10,6 @@ function charToDigit(ch) {
   throw new Error(`Invalid digit character: ${ch}`);
 }
 
-// Decode a string in given base (up to base 16 here) into a BigInt
 function decodeInBase(valueStr, base) {
   const b = BigInt(base);
   let result = 0n;
@@ -29,3 +26,4 @@ function decodeInBase(valueStr, base) {
 }
 
 module.exports = { decodeInBase };
+

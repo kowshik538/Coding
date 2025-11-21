@@ -1,6 +1,4 @@
-// rational.js
 
-// Compute gcd of two BigInts
 function gcdBigInt(a, b) {
   a = a < 0n ? -a : a;
   b = b < 0n ? -b : b;
@@ -58,3 +56,4 @@ class BigRational {
 }
 
 module.exports = { BigRational };
+
